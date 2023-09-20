@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            text-align: center;
+            font-family: "Pacifico", cursive;
+            background-image: linear-gradient(to bottom, #0055a4, #0088cc);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        .corazon {
+            position: absolute;
+            font-size: 36px;
+            color: #ff9900;
+        }
+        .corazon.top {
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .corazon.bottom {
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .corazon.left {
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+        }
+        .corazon.right {
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+        }
+        h1 {
+            color: #ff9900;
+            font-size: 60px;
+            margin-top: 50px;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+            transition: color 0.5s;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+        h1:hover {
+            color: #ff6600;
+        }
+        p {
+            font-size: 24px;
+            line-height: 1.6;
+            margin: 20px;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+        }
+        #imagen1, #imagen2 {
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+            border: 8px solid #ff9900;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(255, 153, 0, 0.7);
+            transition: transform 0.5s;
+        }
+        #imagen1:hover, #imagen2:hover {
+            transform: scale(1.1);
+        }
+        /* Estilos para el reproductor de audio */
+        #audio-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 30px;
+        }
+        #audio {
+            width: 100%;
+            max-width: 400px;
+            background-color: #ff9900;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 153, 0, 0.7);
+            animation: glow 1s ease-in-out infinite alternate; /* Agregar animación de brillo */
+        }
+        footer {
+            background-color: rgba(255, 153, 0, 0.8);
+            padding: 20px;
+            color: #ffffff;
+            font-size: 18px;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+            }
+            to {
+                text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00;
+            }
+        }
+
+        /* Animación de brillo para el reproductor de audio */
+        @keyframes audio-glow {
+            from {
+                box-shadow: 0 0 20px rgba(255, 153, 0, 0.7);
+            }
+            to {
+                box-shadow: 0 0 30px #ffcc00, 0 0 40px #ffcc00, 0 0 50px #ffcc00;
+            }
+        }
+    </style>
+</head>
+<body>
+    <span class="corazon top">&hearts;</span>
+    <span class="corazon bottom">&hearts;</span>
+    <span class="corazon left">&hearts;</span>
+    <span class="corazon right">&hearts;</span>
+
+    <h1>¡Feliz Día del Amor, Mi Amor!</h1>
+    <p>En este día tan especial, quiero decirte cuánto significas para mí. Eres la razón por el que mi mundo es más brillante, más cálido y más hermoso.</p>
+    <h2>reproducelo antes de abrirlo</h2>
+    <div id="audio-container">
+        <audio id="audio" controls>
+            <source src="Homero.mp3" type="audio/mpeg">
+            Tu navegador no soporta la reproducción de audio.
+        </audio>
+    </div>
+    
+    <p>Mi amor, cada día contigo es una aventura maravillosa. Cada sonrisa tuya ilumina mi día y cada momento que compartimos es precioso. Espero que esta página refleje una pequeña parte de lo que siento por ti.</p>
+    
+    <footer>&copy;  &hearts; </footer>
+</body>
+</html>
